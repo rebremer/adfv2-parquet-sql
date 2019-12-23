@@ -1,0 +1,24 @@
+{
+	"name": "ADFv2Trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "parquet2sql",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/adftrigger/blobs/",
+			"ignoreEmptyBlobs": false,
+			"scope": "/subscriptions/513a7987-b0d9-4106-a24d-4b3f49136ea8/resourceGroups/test-edl-rg/providers/Microsoft.Storage/storageAccounts/testedlstorgen",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
