@@ -1,19 +1,19 @@
 ## ADFv2 pipeline writing parquet file to SQL using staging table, stored procedure and event trigger  ##
 
-Added a parquet file to a SQLDB using the following steps
+# The following flow is described: #
 
 - New message added to Azure Queue
 - Azure Function triggered by queue trigger
 - Azure Function creates new file on ADLSgen2 (either a parquet file or csv file)
 - Azure Data Factory is triggered upon new file creation
-- Azuze Data Factory adds data to new staging table
+- Azuze Data Factory adds data in parquet to new staging table in SQLDB
 - Azure Data Factory triggers Stored Procedure that only adds new data to final table to serve customers
 
 Architecture is depicted below.
 
 ![Architecture](https://github.com/rebremer/adfv2-parquet-sql/blob/master/_pictures/parquet2sql.png "Architecture")
 
-Steps to be executed
+# Steps to be executed: #
 
 1. Create Storage queue, Azure Function in Python with Queue trigger, ADLSgen2, SQLDB and ADFv2 instance
 2. Add code of _Azure Function in this git repo to your Funtion, configure it with your storage queue
