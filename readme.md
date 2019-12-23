@@ -9,7 +9,7 @@
 - Azuze Data Factory adds data in parquet to new staging table in SQLDB
 - Azure Data Factory triggers Stored Procedure that only adds new data to final table to serve customers
 
-Architecture is depicted below.
+Flow is depicted below.
 
 ![Architecture](https://github.com/rebremer/adfv2-parquet-sql/blob/master/_pictures/parquet2sql.png "Architecture")
 
