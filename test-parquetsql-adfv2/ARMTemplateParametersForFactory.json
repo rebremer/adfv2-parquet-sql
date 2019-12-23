@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "test-parquetsql-adfv2"
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"ADLSgen2_properties_typeProperties_url": {
+			"value": "https://testedlstorgen.dfs.core.windows.net"
+		},
+		"ADFv2Trigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/513a7987-b0d9-4106-a24d-4b3f49136ea8/resourceGroups/test-edl-rg/providers/Microsoft.Storage/storageAccounts/testedlstorgen"
+		}
+	}
+}
