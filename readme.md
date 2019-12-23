@@ -19,4 +19,5 @@ Steps to be executed
 2. Add code of _Azure Function in this git repo to your Funtion, configure it with your storage queue
 3. Execute SQL script this git repo on your SQLDB, add Managed Instance as user of your SQLDB (see also script)
 4. Setup File System on ADLS gen 2, add Managed Instance as Storage Blob Data Contributer of your ADLSgen2
-5. Creat new pipeline in your ADFv2 instance by connecting to this git repo
+5. Creat new pipeline in your ADFv2 instance by connecting to this git repo. Change connectors to your ADLSgen2, SQLDB
+6. Add message to Storage Queue, check if ADFv2 has run and data is changed in SQLDB
