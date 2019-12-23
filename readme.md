@@ -1,4 +1,4 @@
-## AAD authentication from ADFv2 to Azure Function using Managed Identity  ##
+## ADFv2 pipeline writing parquet file to SQL using staging table, stored procedure and event trigger  ##
 
 Added a parquet file to a SQLDB using the following steps
 
