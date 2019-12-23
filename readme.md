@@ -11,7 +11,7 @@ Added a parquet file to a SQLDB using the following steps
 
 Architecture is depicted below.
 
-![Architecture](https://github.com/rebremer/adfv2-parquet-sql/_pictures/parquet2sql.png "Architecture")
+![Architecture](https://github.com/rebremer/adfv2-parquet-sql/blob/master/_pictures/parquet2sql.png "Architecture")
 
 Steps to be executed
 
